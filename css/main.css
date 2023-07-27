@@ -1,0 +1,131 @@
+
+body {
+  font-family: "PT Sans Caption", sans-serif;
+}
+.interface{
+  min-height: 100vh;
+  background-color: #f7ecde;
+}
+
+.interface .container h1 {
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  color: #352e28;
+  isolation: isolate;
+  font-weight: 500;
+}
+
+.interface .container h1::before{
+  content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+
+.interface .container h1:hover::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  left: 0;
+  bottom: 10px;
+  background-color: #fec260;
+  transition: height 350ms;
+  z-index: -1;
+}
+
+.interface .container .Bookmark-body{
+  border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+
+}
+
+.interface .container .Bookmark-body h2{
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.interface .container .Bookmark-body .butt button{
+  padding: 6px 48px;
+  border: solid 1px #D1512D;
+  background-color: #D1512D;
+  color: white;
+}
+
+.interface .container .Bookmark-body .butt button:hover{
+  background-color: #ba3c19;
+}
+
+.btn-visit{
+  background-color: #9eb23b;
+  color: white;
+  font-size:18px;
+  
+
+}
+
+.btn-visit:hover{
+  background-color: #7b8b27;
+  color: white;
+
+}
+
+.btn-Update{
+  background-color: rgb(62, 183, 175);
+  color: white;
+  font-size:18px;
+  
+ 
+}
+
+.btn-Update:hover{
+  background-color: rgb(30, 156, 147);
+  color: white;
+
+ 
+}
+
+.btn-Delete{
+  background-color: #EB1D36;
+  color: white;
+  font-size:18px;
+  
+}
+input:focus{
+  
+  border-color: #d99c39 !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #fec26055 !important;
+}
+
+.btn-Delete:hover{
+  background-color: #c3172b;
+  color: white;
+
+}
+
+
+@media screen  and (max-width:700px){
+  body{
+    font-size: 14px;
+  }
+  .interface .container h1 {
+    font-size: 35px;}
+
+    
+.interface .container .Bookmark-body h2{
+  font-size: 20px;}
+
+.btn{
+  font-size: 12px;
+}
+}
